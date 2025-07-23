@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winf | Películas Imobiliárias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-black/60 border-b border-teal-500 z-50 shadow-lg backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="text-white text-2xl font-semibold">Winf</h1>
+            <nav class="hidden md:flex space-x-6 text-white">
+                <a href="#sobre" class="hover:text-teal-400 transition">Sobre</a>
+                <a href="#peliculas" class="hover:text-teal-400 transition">Películas</a>
+                <a href="#cidades" class="hover:text-teal-400 transition">Cidades</a>
+                <a href="#contato" class="hover:text-teal-400 transition">Contato</a>
+            </nav>
+            <a href="#cidades"
+                class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-medium transition">Comprar</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+        class="h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-black via-zinc-900 to-black pt-36 md:pt-0">
+        <div class="max-w-2xl">
+            <h1 class="text-2xl md:text-6xl font-light mb-6 leading-tight">Películas Imobiliárias Premium</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10">
+                Alta qualidade, estética moderna e proteção para imóveis. Atendemos diversas cidades do Brasil.
+            </p>
+            <a href="#cidades"
+                class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg text-black font-semibold text-lg transition">
+                Ver cidades atendidas
+            </a>
+        </div>
+    </section>
+
+    <!-- Películas -->
+    <section id="peliculas" class="py-24 px-6 bg-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Nossas Películas</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-zinc-800 p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Espelhada</h3>
+                    <p class="text-sm text-gray-300">Privacidade com visual moderno e controle solar.</p>
+                </div>
+                <div class="bg-zinc-800 p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Jateada</h3>
+                    <p class="text-sm text-gray-300">Ideal para banheiros e escritórios. Elegância e privacidade.</p>
+                </div>
+                <div class="bg-zinc-800 p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Leitoso</h3>
+                    <p class="text-sm text-gray-300">Bloqueio parcial de luz, ótimo para ambientes internos.</p>
+                </div>
+                <div class="bg-zinc-800 p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Preta</h3>
+                    <p class="text-sm text-gray-300">Estilo sofisticado com redução de luz e calor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cidades -->
+    <section id="cidades" class="py-24 px-6 bg-black">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2 text-center text-white">Cidades Atendidas</h2>
+            <p class="text-center text-gray-400 mb-6">Clique na sua cidade para comprar as películas</p>
+            <input id="search" type="text" placeholder="Buscar cidade..."
+                class="w-full mb-8 px-4 py-2 rounded-lg bg-zinc-800 text-white border border-zinc-600 focus:outline-none focus:border-teal-500" />
+
+            <div id="resultado"></div>
+            <div id="nao-encontrado" class="text-center text-gray-400 mt-4 hidden">Nenhuma cidade encontrada.</div>
+        </div>
+    </section>
+
+
+    <!-- Contato -->
+   <section id="contato" class="py-24 px-6 bg-zinc-900">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Fale Conosco</h2>
+    <p class="text-gray-300 mb-8">Tire dúvidas ou faça seu pedido direto pelo WhatsApp.</p>
+    <a href="https://wa.me/5513991662300" 
+       class="bg-[#25D366] text-white px-6 py-2 rounded hover:opacity-80 transition flex items-center justify-center mx-auto max-w-max text-xl font-medium gap-2">
+      <span class="iconify" data-icon="ic:round-whatsapp" data-inline="false" style="font-size: 1.9rem;"></span>
+      Falar no whatsapp
+    </a>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <footer class="bg-[#0a0a0a] text-gray-300 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+
+            <!-- Contatos -->
+            <div class="text-center md:text-left space-y-3">
+                <h3 class="text-white text-xl font-semibold mb-2">Contato</h3>
+                <p>
+                    <a href="mailto:contato@premiumfilms.com.br" class="hover:text-green-500 transition">
+                        contato@premiumfilms.com.br
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:atendimento@premiumfilms.com.br" class="hover:text-green-500 transition">
+                        atendimento@premiumfilms.com.br
+                    </a>
+                </p>
+                <p class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                    <a href="https://www.instagram.com/winf.brasil/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram Premium Films"
+                        class="text-gray-300 hover:text-green-500 transition text-2xl">
+                        <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                    </a>
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-green-600 rounded-lg p-6 max-w-md text-center md:text-left shadow-lg">
+                <h3 class="text-white text-2xl font-bold mb-3">Se torne licenciado</h3>
+                <p class="mb-6 text-gray-200">Venda na sua cidade com exclusividade e faça parte do nosso time de
+                    sucesso!</p>
+                <a href=""
+                    class="inline-block bg-white text-green-600 font-semibold px-5 py-3 rounded hover:bg-gray-100 transition hover:scale-105 transition-300">
+                    Quero ser licenciado
+                </a>
+            </div>
+
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10">
+            &copy; 2025 Winf. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Script Cidades -->
+    <script>
+        const cidadesPorEstado = {
+            SP: ["Santos", "Sorocaba"],
+            RJ: [],
+            MG: [],
+            PR: [],
+        };
+
+        const resultadoDiv = document.getElementById("resultado");
+        const searchInput = document.getElementById("search");
+        const notFound = document.getElementById("nao-encontrado");
+
+        function slugify(text) {
+            return text
+                .toLowerCase()
+                .normalize('NFD')                 // remove acentos
+                .replace(/[\u0300-\u036f]/g, '') // remove diacríticos
+                .replace(/\s+/g, '-')            // espaços viram hífen
+                .replace(/[^\w\-]+/g, '')        // remove caracteres especiais
+                .replace(/\-\-+/g, '-')          // remove hífens duplicados
+                .replace(/^-+/, '')              // remove hífens no início
+                .replace(/-+$/, '');             // remove hífens no fim
+        }
+
+        function mostrarCidades(filtro = "") {
+            resultadoDiv.innerHTML = "";
+            let encontrou = false;
+
+            for (const estado in cidadesPorEstado) {
+                const cidades = cidadesPorEstado[estado].filter(c =>
+                    c.toLowerCase().includes(filtro.toLowerCase())
+                );
+
+                if (cidades.length > 0) {
+                    encontrou = true;
+                    const estadoDiv = document.createElement("div");
+                    estadoDiv.className = "mb-6";
+                    estadoDiv.innerHTML = `
+        <h3 class="text-xl font-semibold mb-2">${estado}</h3>
+        <ul class="grid grid-cols-2 gap-2">
+          ${cidades
+                            .map(cidade => {
+                                const urlCidade = `./cidades/${slugify(cidade)}`;
+                                return `<li><a href="${urlCidade}" class="block bg-zinc-800 p-3 rounded-lg hover:bg-teal-600 transition">${cidade}</a></li>`;
+                            })
+                            .join("")}
+        </ul>`;
+                    resultadoDiv.appendChild(estadoDiv);
+                }
+            }
+
+            notFound.classList.toggle("hidden", encontrou);
+        }
+
+        searchInput.addEventListener("input", () =>
+            mostrarCidades(searchInput.value)
+        );
+
+        mostrarCidades();
+
+    </script>
+</body>
+
+</html>
